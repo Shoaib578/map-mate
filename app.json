@@ -1,16 +1,27 @@
 {
   "expo": {
-    "name": "find-again",
-    "slug": "find-again",
+    "name": "map-mate",
+    "slug": "map-mate",
+    "scheme": "map-mate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain"
+      
     },
     "ios": {
       "supportsTablet": true
@@ -19,10 +30,20 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "package": "com.shoaib578.mapmate"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c22202f5-3994-4c93-a538-ed25901faea3"
+      },
+      "googleClientId": "200499500563-fjuhufaku88hgd0s9q66udu9s64ili52.apps.googleusercontent.com"
+
     }
+  
   }
 }
