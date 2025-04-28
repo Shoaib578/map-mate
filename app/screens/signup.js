@@ -30,7 +30,7 @@ const SignupScreen = ({ navigation }) => {
 
   const [request, response, promptAsync] = Google.useIdTokenAuthRequest({
           clientId: Platform.select({
-              android: '200499500563-fjuhufaku88hgd0s9q66udu9s64ili52.apps.googleusercontent.com',
+              android: '',
           })
   });
   
